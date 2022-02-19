@@ -56,6 +56,7 @@ function checkAnswer(currentevel) {
       }, 1000);
     }
   } else {
+    playSound("wrong");
     restart();
   }
 }
