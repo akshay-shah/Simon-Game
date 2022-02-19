@@ -11,7 +11,6 @@ function nextSequence() {
   setLevel(level);
   randomNumber = Math.round(Math.random() * 3);
   randomChosenColour = buttonColors[randomNumber];
-  console.log(randomChosenColour);
   gamePattern.push(randomChosenColour);
   playSound(randomChosenColour);
 }
@@ -27,7 +26,6 @@ $(".btn").on("click", function () {
   var id = $(this).attr("id");
   userClickedPattern.push(id);
   playSound(id);
-  console.log(userClickedPattern);
   checkAnswer(userClickedPattern.length - 1);
 });
 
